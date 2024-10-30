@@ -67,14 +67,29 @@
 # print(f'Grade: {grade}')
 
 # 6. Write a program to find the largest of two numbers.
-num_one = float(input('Enter the first number '))
-num_two = float(input('Enter the second number '))
 
-total = num_one + num_two
-difference = num_two - num_one
-middle_num = (total - difference) /2
+# num1 = float(input("Enter the first number: "))
+# num2 = float(input("Enter the second number: "))
 
-if middle_num >= num_two:
-    print(middle_num, 'is a largest number')
-elif middle_num <= num_two:
-    print(middle_num,' is a Lesser number' )
+# if num1 > num2:
+#     largest = num1
+# else:
+#     largest = num2
+
+# print(f"The largest number is: {largest}")
+
+
+#7
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+num3 = float(input("Enter the third number: "))
+
+if num1 > num2 and num1 > num3:
+    largest = num1
+elif num2 > num1 and num2 > num3:
+    largest = num2
+else:
+    largest = num3
+
+print(f"The largest number is: {largest}")
+
