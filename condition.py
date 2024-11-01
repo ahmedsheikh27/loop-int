@@ -128,11 +128,84 @@
 
 #11. Check if a given number is a multiple of both 3 and 5.
 
-num = int(input('Enter a number: '))
+# num = int(input('Enter a number: '))
 
-check_validation = (num%3 or num%5) 
+# check_validation = (num%3 or num%5) 
 
-if check_validation == 0:
-    print(f'Number {num} is a multiple of both 3 and 5' )
-else:
-    print(f'Number {num} is not a multiple of both 3 and 5') 
+# if check_validation == 0:
+#     print(f'Number {num} is a multiple of both 3 and 5' )
+# else:
+#     print(f'Number {num} is not a multiple of both 3 and 5') 
+
+# 12. Write a program that takes a temperature in Celsius and checks if it’s freezing, moderate, or hot.
+
+# temp = float(input('Enter a temperature in Celcius: '))
+
+# if temp <= 0:
+#     print(f'The temperature is Freezing at {temp}C')
+# elif  1 <= temp <= 25:
+#     print(f'The temperature is Moderate at {temp}C')
+# else:
+#     print(f'The temperature is Hot at {temp}C')
+
+
+#(
+
+# 13. Take two numbers and an operator (+, -, *, /) as input and perform the corresponding operation.
+
+# num1 = float(input('Enter a number: '))
+
+# operator = input('Enter an operator +,-,*,/: ')
+
+# num2 = float(input('Enter a number: '))
+
+
+# result = (num1 + num2 ) or (num1 - num2) or (num1 * num2) or (num1 / num2)
+
+# if operator == '+':
+#     result = num1 + num2
+#     print(f'The result of {num1} + {num2} is {result}')
+# elif operator == '-':
+#     result = num1 - num2
+#     print(f'The result of {num1} - {num2} is {result}')
+# elif operator == '*':
+#     result = num1 * num2
+#     print(f'The result of {num1} * {num2} is {result}')
+# elif operator == '/':
+#     # Check if the second number is not zero to avoid division by zero
+#     if num2 != 0:
+#         result = num1 / num2
+#         print(f'The result of {num1} / {num2} is {result}')
+#     else:
+#         print('Division by zero is not allowed.')
+# else:
+#     print('Please enter a valid operator (+, -, *, /)')
+# adding new result logic
+
+# new_num = float(input('Enter a new number: '))
+
+# new_result = result + new_num or result - new_num or result / new_num or result * new_num 
+
+# if result and operator == '+':
+#     print(f'The result of {result} + {new_num} is {new_result}')
+# elif result and operator == '-':
+#     print(f'The result of {result} - {new_num} is {new_result}')
+# elif result and operator == '*':
+#     print(f'The result of {result} * {new_num} is {new_result}')
+# elif result and operator == '/' :
+#     if new_num == 0 :
+#         print('The divion of a num with zero is not exist')
+#     else:
+#         print(f'The result of {result} / {new_num} is {new_result}') 
+# else:
+#     print('Please enter an valid operator like +, -, /, *')
+# )
+
+#14. Check if a year input by the user is a century year.
+
+# cen = int(input('Enter a year: '))
+
+# if cen % 100 == 0:
+#   print(f'The year {cen} is a century')
+# else:
+#   print(f'The year {cen} is not a century')
