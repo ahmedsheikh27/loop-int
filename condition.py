@@ -209,3 +209,98 @@
 #   print(f'The year {cen} is a century')
 # else:
 #   print(f'The year {cen} is not a century')
+
+#15. Write a program to check if a number is within a specified range.
+
+# num_in_range = float(input('Enter a number to check its range: '))
+
+# range_min = float(input('Enter min range: '))
+
+# range_max = float(input('Enter max range: '))
+
+# if range_min <= num_in_range <= range_max:
+#     print(f'The number {num_in_range} is in the range of {range_min} to {range_max}')
+# else:
+#     print(f'The number {num_in_range} is not in the range of {range_min} to {range_max}')
+
+
+#16. Take the length of three sides and classify the triangle (equilateral, isosceles, or scalene).
+ 
+# a = float(input("Enter the first side: "))
+# b = float(input("Enter the second side: "))
+# c = float(input("Enter the third side: "))
+
+# equilateral = a == b == c 
+
+# scalene = b != c or a != b or c != a
+
+# isosceles = a == b or a == c or b == c 
+
+# if equilateral:
+#     print("The three sides are equal, so the triangle is equilateral.")
+# elif isosceles:
+#     print("Two sides are equal, so the triangle is isosceles.")
+
+# elif scalene:
+#     print("All three sides are different, so the triangle is scalene.")
+
+#17. Write a program that asks for an integer and checks if it’s divisible by 2, 3, or both.
+
+# num = int(input('Enter a number: '))
+
+# if num % 2 == 0 and num % 3 == 0:
+#     print(f'The number {num} is the divisible of 2 and 3')
+# elif num % 2 == 0:
+#     print(f'The number {num} is the divisible of 2')
+# elif num % 3 == 0:
+#     print(f'The number {num} is the divisible of 3')
+# else:
+#     print(f'The number {num} is not a divisible of 2 and 3')
+
+#18. Take a user’s score and determine if they pass or fail (pass if 50 or above).
+ 
+# your_marks = float(input('Please enter the gained marks: '))
+# total_marks = float(input('Please enter total marks: '))
+
+# percentage = (your_marks / total_marks) * 100
+
+# if 90 <= percentage <= 100:
+#     grade = 'Pass'
+# elif 50 <= percentage < 90:
+#     grade = 'Pass'
+# else:
+#     grade = 'Fail'
+
+# print(f'Percentage: {percentage:.2f}%')
+# print(f'Grade: {grade}')
+
+#19. Check if a string input is uppercase, lowercase, or a mix.
+
+# user_input = input('Enter a string: ')
+
+# if user_input.isupper():
+#     print('Sting contain Upper Case')
+# elif user_input.islower():
+#     print('Sting contain Lower Case')
+# elif any(x.isupper() for x in user_input) and any(x.islower() for x in user_input):
+#     print('Sting contain both Upper and Lower keywords')
+# else:
+#     print('Input is Empty')
+
+#20. Create a program that evaluates if an inputted number is prime.
+
+# prime = int(input('Enter a number: '))
+
+# if prime > 1:
+#     is_prime = True
+#     for i in range(2, int(prime**0.5) + 1):
+#         if prime % i == 0:
+#             is_prime = False
+#             break
+
+#     if is_prime:
+#         print(f'The number {prime} is a prime number.')
+#     else:
+#         print(f'The number {prime} is not a prime number.')
+# else:
+#     print(f'The number {prime} is not a prime number.') 
